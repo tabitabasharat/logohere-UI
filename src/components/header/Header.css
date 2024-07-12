@@ -1,0 +1,39 @@
+.singIn-btn{
+    font-family: Poppins !important;
+font-size: 21.6px;
+font-weight: 700;
+line-height: 32.4px;
+text-align: left;
+color: white;
+background: rgba(218, 143, 77, 1);
+border: 1.35px solid rgba(255, 255, 255, 1);
+width: 218.7px;
+height: 64.8px;
+border-radius: 22.95px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.nav-text{
+    font-family: Poppins;
+font-size: 21.6px !important;
+font-weight: 600 !important;
+line-height: 23.76px !important;
+text-align: left !important;
+color: white !important;
+padding: 0px !important;
+}
+.main-div-nav{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 70.35px;
+}
+.inner-div{
+    gap: 55.4px !important;
+    display: flex;
+}
+.bg-black-div{
+    background-color: black;
+    padding: 31.05px 164.7px 31.05px 167.4px ;
+}

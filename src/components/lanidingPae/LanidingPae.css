@@ -1,0 +1,374 @@
+.bg-img-container {
+  background-image: url("../../assets/image\ 103.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.distance {
+  padding: 238.95px 133.2px 262.12px 133.2px !important;
+}
+.cat-img {
+  width: 566.15px !important;
+  height: 694.7px !important;
+}
+.card-img-bg {
+  background-image: url("../../assets/likesCard.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 162.16px;
+}
+.text-font h3 {
+  font-family: Poppins;
+  font-size: 86.4px;
+  font-weight: 700;
+  line-height: 129.6px;
+  text-align: left;
+  color: white !important;
+}
+.text-font h3 span {
+  color: rgba(218, 143, 77, 1) !important;
+}
+.text-font p {
+  font-family: Poppins;
+  font-size: 13.2px;
+  font-weight: 700;
+  line-height: 19.8px;
+  text-align: left;
+  color: white;
+}
+.butons-stlying {
+  display: flex;
+  gap: 50.73px !important;
+  padding: 58.9px 0px 70px;
+}
+.butons-stlying .get-btn {
+  width: 199.02px;
+  height: 58.97px;
+  border-radius: 20.88px;
+  border: 1.23px;
+  background: rgba(218, 143, 77, 1);
+  border: 1.23px solid rgba(255, 255, 255, 1);
+  color: white;
+  font-family: Poppins;
+  font-size: 17.2px;
+  font-weight: 700;
+  line-height: 25.8px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.butons-stlying .contact-btn {
+  width: 199.02px;
+  height: 58.97px;
+  border-radius: 20.88px;
+  border: 1.23px;
+  background: transparent;
+  border: 1.23px solid rgba(255, 255, 255, 1);
+  color: white;
+  font-family: Poppins;
+  font-size: 17.2px;
+  font-weight: 700;
+  line-height: 25.8px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img-bg {
+  display: flex;
+  gap: 36.85px;
+  padding: 34.4px 15.4px 32.4px;
+}
+.card-likes-text-stlying h3 {
+  font-family: Space Mono !important;
+  font-size: 34.4px;
+  font-weight: 700;
+  line-height: 48.16px;
+  text-align: left;
+  color: white;
+}
+.card-likes-text-stlying p {
+  font-family: Work Sans !important;
+  font-size: 29.47px;
+  font-weight: 400;
+  line-height: 47.15px;
+  text-align: left;
+  color: white;
+}
+.about-us {
+  font-family: Poppins;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 81px;
+  text-align: left;
+  color: white;
+  background-color: black;
+  margin-bottom: 0px !important;
+  display: flex;
+  justify-content: center;
+}
+.how-it-works {
+  font-family: Poppins;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 81px;
+  text-align: left;
+  color: white;
+  background-color: black;
+  margin-bottom: 0px !important;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUs-bg-color {
+  background: rgba(218, 143, 77, 0.09);
+}
+.abotus-row {
+  padding: 22.95px 156px;
+}
+.cats-img {
+  /* height: 1690.1px; */
+  width: 500px !important;
+}
+.Connect-Wallet-btn {
+  font-family: Poppins;
+  font-size: 17.55px;
+  font-weight: 700;
+  line-height: 35.24px;
+  text-align: left;
+  color: white;
+  width: 199.02px;
+  height: 58.97px;
+  border-radius: 20.88px;
+  border: 1.23px;
+  border: 1.23px solid rgba(218, 143, 77, 1);
+  background: rgba(255, 255, 255, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.Row-RHS {
+  padding: 116px 135px 0px 99px !important;
+}
+.col-RHS h3 {
+  font-family: Poppins;
+  font-size: 59.76px !important;
+  font-weight: 700 !important;
+  line-height: 71.71px !important;
+  text-align: left;
+  color: white;
+  margin-bottom: 61px;
+}
+.col-RHS p {
+  font-family: Poppins;
+  font-size: 14.94px !important;
+  font-weight: 600 !important;
+  line-height: 17.93px !important;
+  text-align: left;
+  color: white;
+}
+.imges-nfts {
+  width: 531.9px;
+}
+.col-RHS {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 163px 0px;
+}
+.bg-footer {
+  background-image: url("../../assets/image\ 108.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 110.7px;
+}
+.join-text {
+  font-family: Poppins;
+  font-size: 59.76px;
+  font-weight: 700;
+  line-height: 71.71px;
+  text-align: left;
+  color: white;
+}
+.bg-footer p {
+  font-family: Poppins;
+  font-size: 14.94px;
+  font-weight: 600;
+  line-height: 17.93px;
+  text-align: left;
+  color: white;
+  padding: 63px 0px 62px;
+  gap: 27px !important;
+}
+.email-input {
+  border-radius: 41.85px;
+  background: rgba(217, 217, 217, 1);
+  width: 621px;
+  height: 67.5px;
+  border: none !important;
+}
+.email-input::placeholder {
+  font-family: Poppins;
+  font-size: 17.55px;
+  font-weight: 300;
+  line-height: 21.06px;
+  text-align: left;
+  color: rgba(103, 103, 103, 1);
+  padding-left: 41.85px;
+}
+.input-stlying {
+  display: flex;
+  gap: 27px;
+}
+.join-btn {
+  width: 199.8px;
+  height: 67.5px;
+  border-radius: 41.85px;
+  border: 1.35px;
+  background: rgba(239, 231, 215, 0.56);
+  border: 1.35px solid rgba(234, 145, 18, 1);
+  color: white;
+  font-family: Poppins;
+  font-size: 17.55px;
+  font-weight: 500;
+  line-height: 21.06px;
+  text-align: center;
+}
+.nft-marketing {
+  font-family: Work Sans !important;
+  font-size: 16.2px;
+  font-weight: 400;
+  line-height: 17.82px;
+  text-align: left;
+  color: rgba(204, 204, 204, 1);
+}
+.top-creater h3 {
+  font-family: Poppins;
+  font-size: 50.79px;
+  font-weight: 600;
+  line-height: 60.94px;
+  text-align: left;
+  color: white;
+}
+.top-creater {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.top-creater p {
+  font-family: Work Sans;
+  font-size: 18.9px;
+  font-weight: 400;
+  line-height: 30.24px;
+  text-align: left;
+  color: white;
+}
+.main-bg-black-n-white-img {
+  background-image: url("../../assets/bgimg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title-names {
+  font-family: Work Sans;
+  font-size: 29.7px;
+  font-weight: 600;
+  line-height: 41.58px;
+  text-align: center;
+  color: white !important;
+}
+.image-card {
+  width: 324px !important;
+  height: 321.75px !important;
+  padding: 27px !important;
+  gap: 4.05px !important;
+  border-radius: 27px !important;
+  background: rgba(230, 220, 186, 0.2) !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.image-card1 {
+  width: 444.72px !important;
+  height: 531.9px !important;
+  border-radius: 18.53px !important;
+  background: rgba(244, 233, 196, 0.09) !important;
+  border: 1.16px solid;
+
+  /* border-image-source: radial-gradient(
+      95.62% 92.46% at 4.25% 7.62%,
+      rgba(232, 142, 14, 0.87) 12.9%,
+      rgba(255, 255, 255, 0.45) 100%
+    ) */
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nfts-boxes-divs-stlye {
+  margin-bottom: 36px;
+  gap: 30px;
+}
+.nfts-boxes-divs-stlye1 {
+  margin-bottom: 36px;
+  gap: 16px;
+}
+.cats-imges {
+  width: 147.15px !important;
+}
+.ether-img p {
+  font-family: Space Mono !important;
+  font-size: 21.6px;
+  font-weight: 400;
+  line-height: 30.24px;
+  text-align: left;
+  color: white;
+}
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.checkout h3 {
+  padding-top: 124.2px;
+}
+.checkout p {
+  padding-bottom: 106px;
+  padding-top: 13.12px !important;
+}
+.checkout2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.checkout2 h3 {
+  padding-top: 124.2px;
+}
+.checkout2 p {
+  padding-bottom: 106px;
+  padding-top: 28.5px !important;
+  text-align: center;
+}
+.ether-img p span {
+  font-family: Work Sans;
+  font-size: 21.6px;
+  font-weight: 400;
+  line-height: 30.24px;
+  text-align: right;
+  color: rgba(133, 133, 132, 1);
+  padding-left: 13.5px !important;
+  padding-right: 13.5px !important;
+}
+.card-body {
+  padding: 0px !important;
+}
