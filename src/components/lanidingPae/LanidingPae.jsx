@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../header/Header";
 import { Row, Container, Col, Card, Button } from "react-bootstrap/esm";
 import catimg from "../../assets/catmain.svg";
@@ -6,7 +6,7 @@ import "./LanidingPae.css";
 import cats from "../../assets/cats.svg";
 import wallet from "../../assets/image 110.png";
 import dollarimg from "../../assets/image 113.png";
-import monkey from "../../assets/Ellipse 129.png";
+import monkey from "../../assets/monkey.svg";
 import monky from "../../assets/Ellipse 137.png";
 import girl from "../../assets/Ellipse 138.png";
 import dog from "../../assets/Ellipse 136.png";
@@ -14,15 +14,38 @@ import skull from "../../assets/Ellipse 135.png";
 import skull1 from "../../assets/Ellipse 133.png";
 import skull2 from "../../assets/Ellipse 130.png";
 import skull3 from "../../assets/Ellipse 134.png";
+import roadmap from "../../assets/roadmap.svg";
+import cat1 from "../../assets/Ellipse 129.png";
+import cat2 from "../../assets/Ellipse 130.png";
+import cat3 from "../../assets/Ellipse 131.png";
+import cat4 from "../../assets/Ellipse 132.png";
+import cat5 from "../../assets/Frame 1261152802.png";
+import cat6 from "../../assets/Frame 1261152802 (1).png";
 
+const catimges = [
+  { src: cat1 },
+  { src: cat2 },
+  { src: cat3 },
+  { src: cat4 },
+  { src: cat5 },
+  { src: cat6 },
+];
 
-const images = [{ src: monky }, { src: girl }, { src: dog }, { src: skull },{ src: skull1 },{ src: skull2 },{ src: skull3 }];
-
+const images = [
+  { src: monky },
+  { src: girl },
+  { src: dog },
+  { src: skull },
+  { src: skull1 },
+  { src: skull2 },
+  { src: skull3 },
+];
+//  const countnum =[1];
 const shuffleImages = (images) => {
   const shuffledImages = [];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     const rowImages = [...images];
-    for (let j = 0; j < 2; j++) {
+    for (let j = 0; j < 4; j++) {
       const randomIndex = Math.floor(Math.random() * rowImages.length);
       shuffledImages.push(rowImages.splice(randomIndex, 1)[0]);
     }
@@ -32,11 +55,27 @@ const shuffleImages = (images) => {
 
 function LanidingPae() {
   const shuffledImages = shuffleImages(images);
+  const [activeButton, setActiveButton] = useState(0);
+  const defaultCount = 1;
+  const [count, setCount] = useState([
+    { num: 1 },
+    { num: 2 },
+    { num: 3 },
+    { num: 4 },
+    { num: 5 },
+  ]);
+  const handleCount = (index) => {
+    setCount(index);
+  };
+  const handleClick = (index) => {
+    setActiveButton(index);
+  };
+  //   const catshuffled = catshuffled(catimges);
   return (
     <div className="main-bg-black-n-white-img">
       <Header />
       {/* maindiv */}
-      {/* <Container fluid className="bg-img-container">
+      <Container fluid className="bg-img-container">
         <Row className="distance">
           <Col>
             {" "}
@@ -67,9 +106,9 @@ function LanidingPae() {
             <img src={catimg} />
           </Col>
         </Row>
-      </Container>  */}
+      </Container> 
       {/* Aboutus */}
-      {/* <Container fluid className="bg-black">
+      <Container fluid className="bg-black">
         <h3 className="about-us">About us</h3>
         <div className="aboutUs-bg-color">
           <Row className="abotus-row">
@@ -97,9 +136,117 @@ function LanidingPae() {
             </Col>
           </Row>
         </div>
-      </Container> */}
+      </Container>
+      {/* top creater */}
+       <div className="checkout2 top-creater">
+        <h3>Top Collections</h3>
+        <p>
+          The largest and unique Super rare NFT marketplace <br />
+          For crypto-collectibles
+        </p>
+      </div>
+      <div className="cardbg">
+        {" "}
+        {Array.from({ length: Math.ceil(catimges.length / 3) }).map(
+          (_, rowIndex) => (
+            <Row key={rowIndex} className={`nfts-boxes-divs-stlye1 ${activeButton === 0 ? 'active' : ''}`} onClick={() => handleClick(0)}>
+              {catimges
+                .slice(rowIndex * 3, rowIndex * 3 + 3)
+                .map((img, colIndex) => (
+                  <Col key={colIndex} className="p-0 crd-derction">
+                    <Card className="image-card1">
+                        <Card.Title className="title-name mb-0">
+                          <p>Created by</p>
+                          <h3 className="titlename">
+                            {" "}
+                            <div
+                              className="bg-white rounded-pill"
+                              style={{ width: "27px", height: "27px" }}
+                            >
+                              
+                            </div>{" "}
+                            James Watson
+                          </h3>
+                        </Card.Title>
+                        <div className="card-info-igm">
+                          <Card.Img
+                            variant="top"
+                            src={img.src}
+                            alt={img.name}
+                            className="cats-images"
+                          />
+
+                        </div>
+                        <Card.Text className=" font-stlye-text mb-0">
+                            <h3>Nfts Collections</h3>
+                            <p className="mb-0">
+                            Created by 
+                              <span> James Watson</span>
+                            </p>
+                          </Card.Text>
+                    </Card>
+                  </Col>
+                ))}
+            </Row>
+          )
+        )}
+      </div>
+      {/* topcreater */}
+      <div className="top-creater">
+        <div className="checkout">
+          <h3>Top creators</h3>
+          <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+        </div>
+        <div>
+          {" "}
+          {Array.from({ length: Math.ceil(images.length=4) }).map(
+            (_, rowIndex) => (
+              <Row key={rowIndex} className="nfts-boxes-divs-stlye">
+                {images
+                  .slice(rowIndex * 4, rowIndex * 4 + 4)
+                  .map((img, colIndex) => (
+                    <Col key={colIndex} className="p-0 crd-derction">
+                      <Card className="image-card">
+                        <div>
+                          <Card.Title className="title-names mb-0">
+                            <p>
+1
+                            </p>
+                          </Card.Title>
+                          <div className="d-flex justify-content-center">
+                            <Card.Img
+                              variant="top"
+                              src={img.src}
+                              alt={img.name}
+                              className="cats-imges"
+                            />
+                          </div>
+                          <div className="card-info">
+                            <Card.Text className="d-flex flex-column ether-img mb-0">
+                              <h3>Name NFT</h3>
+                              <p className="mb-0">
+                                <span>Total Sales:</span> 34.53 ETH
+                              </p>
+                            </Card.Text>
+                          </div>
+                        </div>
+                      </Card>
+                    </Col>
+                  ))}
+              </Row>
+            )
+          )}
+        </div>
+      </div>
+      {/* roadmap */}
+      <div>
+        <h3 className="roadmap">Road Map</h3>
+        <div className="d-flex justify-content-center roadmap-img" >
+            <img src={roadmap} width={"80%"} />
+        </div>
+      </div>
       {/* how its work */}
-      {/* <Container fluid className="bg-black Row-RHS">
+      <Container fluid className="bg-black Row-RHS">
         <h3 className="how-it-works">how it works</h3>
         <Row className="d-flex align-items-center justify-content-center">
           <Col lg={6} className="col-RHS">
@@ -143,93 +290,9 @@ function LanidingPae() {
             </p>
           </Col>
         </Row>
-      </Container> */}
-      {/* top creater */}
-       <div className="top-creater">
-        <div className="checkout2">
-        <h3>Top Collections</h3>
-        <p >The largest and unique Super rare NFT marketplace <br/>
-        For crypto-collectibles</p>
-        </div>
-        <div>
-          {" "}
-          {Array.from({ length: 3 }).map((_, rowIndex) => (
-            <Row key={rowIndex} className="nfts-boxes-divs-stlye1">
-              {shuffledImages
-                .slice(rowIndex * 3, rowIndex * 3 + 3)
-                .map((img, colIndex) => (
-                  <Col key={colIndex} className="p-0 crd-derction ">
-                    <Card className="image-card1">
-                      <Card.Img
-                        variant="top"
-                        src={img.src}
-                        alt={img.name}
-                        className="cats-imges"
-                      />
-                      <div>
-                        <Card.Title className="title-names mb-0">
-                          Name NFT
-                        </Card.Title>
-                        <div className="card-info">
-                          <Card.Text className="d-flex ether-img mb-0">
-                            <p className="mb-0">
-                              {" "}
-                              <span>Total Sales:</span>
-                              34.53 ETH
-                            </p>
-                          </Card.Text>
-                        </div>
-                      </div>
-                    </Card>
-                  </Col>
-                ))}
-            </Row>
-          ))}
-        </div>
-      </div>
-      {/* <div className="top-creater">
-        <div className="checkout">
-        <h3>Top creators</h3>
-        <p >Checkout Top Rated Creators on the NFT Marketplace</p>
-        </div>
-        <div>
-          {" "}
-          {Array.from({ length: 4 }).map((_, rowIndex) => (
-            <Row key={rowIndex} className="nfts-boxes-divs-stlye">
-              {shuffledImages
-                .slice(rowIndex * 4, rowIndex * 4 + 4)
-                .map((img, colIndex) => (
-                  <Col key={colIndex} className="p-0 crd-derction ">
-                    <Card className="image-card">
-                      <Card.Img
-                        variant="top"
-                        src={img.src}
-                        alt={img.name}
-                        className="cats-imges"
-                      />
-                      <div>
-                        <Card.Title className="title-names mb-0">
-                          Name NFT
-                        </Card.Title>
-                        <div className="card-info">
-                          <Card.Text className="d-flex ether-img mb-0">
-                            <p className="mb-0">
-                              {" "}
-                              <span>Total Sales:</span>
-                              34.53 ETH
-                            </p>
-                          </Card.Text>
-                        </div>
-                      </div>
-                    </Card>
-                  </Col>
-                ))}
-            </Row>
-          ))}
-        </div>
-      </div> */}
+      </Container>
       {/* join now */}
-      {/* <div className="bg-footer">
+      <div className="bg-footer">
         <h3 className="join-text">Join Our Community</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque nunc
@@ -242,7 +305,7 @@ function LanidingPae() {
           <button className="join-btn">Join Now</button>
         </div>
         <p className="nft-marketing ">Ⓒ NFT Market. Use this template freely.</p>
-      </div> */}
+      </div>
     </div>
   );
 }

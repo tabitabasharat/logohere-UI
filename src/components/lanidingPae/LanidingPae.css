@@ -153,6 +153,19 @@
 .Row-RHS {
   padding: 116px 135px 0px 99px !important;
 }
+.roadmap-img {
+  background-image: url("../../assets/image\ 108.png");
+}
+.roadmap {
+  font-family: Poppins;
+  font-size: 50.79px;
+  font-weight: 600;
+  line-height: 60.94px;
+  text-align: center;
+  color: white;
+  padding-bottom: 122px;
+  padding-top: 179px;
+}
 .col-RHS h3 {
   font-family: Poppins;
   font-size: 59.76px !important;
@@ -262,6 +275,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  /* background-image: url("../../assets/image\ 108.png"); */
 }
 .top-creater p {
   font-family: Work Sans;
@@ -276,13 +290,32 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.title-names {
-  font-family: Work Sans;
-  font-size: 29.7px;
-  font-weight: 600;
-  line-height: 41.58px;
+.title-names{
+    width: 40.5px !important;
+height: 40.5px !important;
+gap: 13.5px !important;
+border-radius: 27px !important;
+background: rgba(43, 43, 43, 1) !important ;
+}
+.title-names p{
+  font-family: Space Mono !important;
+  font-size: 21.6px;
+  font-weight: 400;
+  line-height: 30.24px;
   text-align: center;
-  color: white !important;
+  color: rgba(133, 133, 132, 1) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-name p {
+  font-size: 18.53px;
+  font-weight: 400;
+  line-height: 27.8px;
+  text-align: left;
+  color: rgba(180, 199, 206, 1);
+  padding-bottom: 4px !important;
+  margin-bottom: 0px !important;
 }
 .image-card {
   width: 324px !important;
@@ -295,23 +328,86 @@
   align-items: center;
   justify-content: flex-end;
 }
+.nfts-boxes-divs-stlye1.active {
+  /* background: linear-gradient(94.74deg, #85d8eb 9.96%, #1177e8 90.04%) !important; */
+  border-radius: 10px;
+}
+.nfts-boxes-divs-stlye1::before {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 38px;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
 .image-card1 {
   width: 444.72px !important;
   height: 531.9px !important;
   border-radius: 18.53px !important;
   background: rgba(244, 233, 196, 0.09) !important;
   border: 1.16px solid;
-
+  padding: 18px 18px 20px 18px;
+  border: 1.16px solid; /* Define the border width */
+  border-image-source: radial-gradient(
+    95.62% 92.46% at 4.25% 7.62%,
+    rgba(232, 142, 14, 0.87) 12.9%,
+    rgba(255, 255, 255, 0.45) 100%
+  ) !important;
+  border-image-slice: 1 !important;
   /* border-image-source: radial-gradient(
       95.62% 92.46% at 4.25% 7.62%,
       rgba(232, 142, 14, 0.87) 12.9%,
       rgba(255, 255, 255, 0.45) 100%
     ) */
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
 
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: cente; */
+}
+.card-info-igm {
   display: flex;
+  justify-content: center;
+}
+.titlename {
+  display: flex;
+  gap: 9px;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  font-size: 18.53px !important;
+  font-weight: 600 !important;
+  line-height: 27.8px;
+  text-align: left;
+  color: rgba(234, 145, 18, 1);
+  margin-bottom: 0px !important;
+}
+.font-stlye-text h3 {
+  font-family: Poppins;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 27.8px;
+  text-align: left;
+  color: white;
+}
+.font-stlye-text p {
+  font-size: 18.53px;
+  font-weight: 400;
+  line-height: 27.8px;
+  text-align: left;
+  color: rgba(172, 172, 172, 1);
+}
+.font-stlye-text p span {
+  font-size: 18.53px;
+  font-weight: 400;
+  line-height: 27.8px;
+  text-align: left;
+  color: rgba(234, 145, 18, 1);
 }
 .nfts-boxes-divs-stlye {
   margin-bottom: 36px;
@@ -324,12 +420,24 @@
 .cats-imges {
   width: 147.15px !important;
 }
+.cats-images {
+  width: 299.7px !important;
+  margin: 51px 0px 30px !important;
+}
 .ether-img p {
   font-family: Space Mono !important;
   font-size: 21.6px;
   font-weight: 400;
   line-height: 30.24px;
   text-align: left;
+  color: white;
+}
+.ether-img h3 {
+  font-family: Work Sans;
+  font-size: 29.7px;
+  font-weight: 600;
+  line-height: 41.58px;
+  text-align: center;
   color: white;
 }
 .checkout {
@@ -351,6 +459,14 @@
   align-items: center;
   flex-direction: column;
 }
+.cardbg {
+  background-image: url("../../assets/image\ 108.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .checkout2 h3 {
   padding-top: 124.2px;
 }
@@ -366,8 +482,6 @@
   line-height: 30.24px;
   text-align: right;
   color: rgba(133, 133, 132, 1);
-  padding-left: 13.5px !important;
-  padding-right: 13.5px !important;
 }
 .card-body {
   padding: 0px !important;
