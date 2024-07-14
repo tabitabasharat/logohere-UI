@@ -21,9 +21,9 @@ import cat3 from "../../assets/Ellipse 131.png";
 import cat4 from "../../assets/Ellipse 132.png";
 import cat5 from "../../assets/Frame 1261152802.png";
 import cat6 from "../../assets/Frame 1261152802 (1).png";
-import str from '../../assets/wide.png'
-import str1 from '../../assets/wide.png'
-import str2 from '../../assets/wide.png'
+import str from "../../assets/wide.png";
+import str1 from "../../assets/wide.png";
+import str2 from "../../assets/wide.png";
 
 const catimges = [
   { src: cat1 },
@@ -79,8 +79,8 @@ function LanidingPae() {
     <div className="main-bg-black-n-white-img">
       <Header />
       {/* maindiv */}
-      <img src={str} className="str"/>
-     <Container fluid className="bg-img-container">
+      <img src={str} className="str" />
+      <Container fluid className="bg-img-container">
         <Row className="distance">
           <Col className="main-div-LHS">
             {" "}
@@ -116,11 +116,11 @@ function LanidingPae() {
               </div>
             </div>
           </Col>
-          <Col  className="maincat">
-            <img src={catimg}/>
+          <Col className="maincat">
+            <img src={catimg} />
           </Col>
         </Row>
-      </Container> 
+      </Container>
       {/* Aboutus */}
       <Container fluid className="bg-black">
         <h3 className="about-us">About us</h3>
@@ -167,7 +167,7 @@ function LanidingPae() {
               {catimges
                 .slice(rowIndex * 3, rowIndex * 3 + 3)
                 .map((img, colIndex) => (
-                  <Col key={colIndex} className="p-0 crd-derction">
+                  <Col key={colIndex} className="p-0 crd-derction1">
                     <Card
                       className={` image-card1 ${
                         activeButton === 0 ? "active" : ""
@@ -212,43 +212,42 @@ function LanidingPae() {
         <div className="checkout">
           <h3>Top creators</h3>
           <p>Checkout Top Rated Creators on the NFT Marketplace</p>
-        </div>
-          {" "}
-          {Array.from({ length: Math.ceil((images.length = 4)) }).map(
-            (_, rowIndex) => (
-              <Row key={rowIndex} className="nfts-boxes-divs-stlye">
-                {images
-                  .slice(rowIndex * 4, rowIndex * 4 + 4)
-                  .map((img, colIndex) => (
-                    <Col key={colIndex} className="p-0 crd-derction">
-                      <Card className="image-card">
-                        <div>
-                          <Card.Title className="title-names mb-0">
-                            <p>{colIndex + 1}</p>{" "}
-                          </Card.Title>
-                          <div className="d-flex justify-content-center">
-                            <Card.Img
-                              variant="top"
-                              src={img.src}
-                              alt={img.name}
-                              className="cats-imges"
-                            />
-                          </div>
-                          <div className="card-info">
-                            <Card.Text className="d-flex flex-column ether-img mb-0">
-                              <h3>Name NFT</h3>
-                              <p className="mb-0">
-                                <span>Total Sales:</span> 34.53 ETH
-                              </p>
-                            </Card.Text>
-                          </div>
+        </div>{" "}
+        {Array.from({ length: Math.ceil((images.length = 4)) }).map(
+          (_, rowIndex) => (
+            <Row key={rowIndex} className="nfts-boxes-divs-stlye">
+              {images
+                .slice(rowIndex * 4, rowIndex * 4 + 4)
+                .map((img, colIndex) => (
+                  <Col key={colIndex} className="p-0 crd-derction">
+                    <Card className="image-card">
+                      <div>
+                        <Card.Title className="title-names mb-0">
+                          <p>{colIndex + 1}</p>{" "}
+                        </Card.Title>
+                        <div className="d-flex justify-content-center">
+                          <Card.Img
+                            variant="top"
+                            src={img.src}
+                            alt={img.name}
+                            className="cats-imges"
+                          />
                         </div>
-                      </Card>
-                    </Col>
-                  ))}
-              </Row>
-            )
-          )}
+                        <div className="card-info">
+                          <Card.Text className="d-flex flex-column ether-img mb-0">
+                            <h3>Name NFT</h3>
+                            <p className="mb-0">
+                              <span>Total Sales:</span> 34.53 ETH
+                            </p>
+                          </Card.Text>
+                        </div>
+                      </div>
+                    </Card>
+                  </Col>
+                ))}
+            </Row>
+          )
+        )}
       </div>
       {/* roadmap */}
       <div>
@@ -258,8 +257,8 @@ function LanidingPae() {
         </div>
       </div>
       {/* how its work */}
-      <img src={str1} className="str1"/>
-      <img src={str2} className="str2"/>
+      <img src={str1} className="str1" />
+      <img src={str2} className="str2" />
       <Container fluid className="bg-black Row-RHS">
         <h3 className="how-it-works">how it works</h3>
         <Row className="d-flex align-items-center str12 justify-content-center">
@@ -267,23 +266,34 @@ function LanidingPae() {
             <img src={wallet} className="imges-nfts" />
           </Col>
           <Col lg={6} className="col-RHS ">
-            <h3>Setup and Connect <br/> your Wallet.</h3>
+            <h3>
+              Setup and Connect <br /> your Wallet.
+            </h3>
             <p className="mb-0">
-              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque<br/>
-              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque porta<br/>
+              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque
+              <br />
+              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque porta
+              <br />
               elementum. Id mattis neque diam nulla. Amet et a felis
-              pellentesque <br/>sed odio.
+              pellentesque <br />
+              sed odio.
             </p>
           </Col>
         </Row>
         <Row className="">
           <Col lg={6} className="col-RHS str22">
-            <h3>Setup and Connect<br/> your Wallet.</h3>
+            <h3>
+              Setup and Connect
+              <br /> your Wallet.
+            </h3>
             <p className="mb-0">
-              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque<br/>
-              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque porta<br/>
+              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque
+              <br />
+              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque porta
+              <br />
               elementum. Id mattis neque diam nulla. Amet et a felis
-              pellentesque<br/> sed odio.
+              pellentesque
+              <br /> sed odio.
             </p>
           </Col>
           <Col lg={6} className="col-RHS">
@@ -295,12 +305,18 @@ function LanidingPae() {
             <img src={dollarimg} className="imges-nfts" />
           </Col>
           <Col lg={6} className="col-RHS">
-            <h3>Setup and Connect <br/>your Wallet.</h3>
+            <h3>
+              Setup and Connect <br />
+              your Wallet.
+            </h3>
             <p className="mb-0">
-              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque<br/>
-              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque porta<br/>
+              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque
+              <br />
+              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque porta
+              <br />
               elementum. Id mattis neque diam nulla. Amet et a felis
-              pellentesque <br/>sed odio.
+              pellentesque <br />
+              sed odio.
             </p>
           </Col>
         </Row>
@@ -318,9 +334,7 @@ function LanidingPae() {
           <input type="text" className="email-input" placeholder="Your Email" />
           <button className="join-btn">Join Now</button>
         </div>
-        <p className="nftmarket">
-          Ⓒ NFT Market. Use this template freely.
-        </p>
+        <p className="nftmarket">Ⓒ NFT Market. Use this template freely.</p>
       </div>
     </div>
   );
