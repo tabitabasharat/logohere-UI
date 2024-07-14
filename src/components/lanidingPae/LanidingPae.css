@@ -14,12 +14,12 @@
 }
 .str1 {
   position: absolute;
-  top: 825% !important;
+  top: 815% !important;
   right: 43% !important;
 }
 .str2 {
   position: absolute;
-  top: 970% !important;
+  top: 960% !important;
   right: 62%;
 }
 .str{
@@ -485,10 +485,11 @@
   text-align: left;
   color: rgba(234, 145, 18, 1);
 }
+
 .nfts-boxes-divs-stlye {
   margin-bottom: 36px;
   margin: 0px !important;
-  gap: 30px;
+  gap: 30.27px;
 }
 .nfts-boxes-divs-stlye1 {
   margin-bottom: 18.6px;
