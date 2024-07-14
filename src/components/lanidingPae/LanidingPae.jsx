@@ -21,6 +21,9 @@ import cat3 from "../../assets/Ellipse 131.png";
 import cat4 from "../../assets/Ellipse 132.png";
 import cat5 from "../../assets/Frame 1261152802.png";
 import cat6 from "../../assets/Frame 1261152802 (1).png";
+import str from '../../assets/wide.png'
+import str1 from '../../assets/wide.png'
+import str2 from '../../assets/wide.png'
 
 const catimges = [
   { src: cat1 },
@@ -76,9 +79,10 @@ function LanidingPae() {
     <div className="main-bg-black-n-white-img">
       <Header />
       {/* maindiv */}
+      <img src={str} className="str"/>
      <Container fluid className="bg-img-container">
         <Row className="distance">
-          <Col>
+          <Col className="main-div-LHS">
             {" "}
             <div className="text-font">
               <h3 className="mb-0">
@@ -254,13 +258,15 @@ function LanidingPae() {
         </div>
       </div>
       {/* how its work */}
+      <img src={str1} className="str1"/>
+      <img src={str2} className="str2"/>
       <Container fluid className="bg-black Row-RHS">
         <h3 className="how-it-works">how it works</h3>
-        <Row className="d-flex align-items-center justify-content-center">
+        <Row className="d-flex align-items-center str12 justify-content-center">
           <Col lg={6} className="col-RHS">
             <img src={wallet} className="imges-nfts" />
           </Col>
-          <Col lg={6} className="col-RHS">
+          <Col lg={6} className="col-RHS ">
             <h3>Setup and Connect <br/> your Wallet.</h3>
             <p className="mb-0">
               Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque<br/>
@@ -271,7 +277,7 @@ function LanidingPae() {
           </Col>
         </Row>
         <Row className="">
-          <Col lg={6} className="col-RHS">
+          <Col lg={6} className="col-RHS str22">
             <h3>Setup and Connect<br/> your Wallet.</h3>
             <p className="mb-0">
               Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque<br/>

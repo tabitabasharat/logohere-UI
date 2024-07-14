@@ -3,6 +3,30 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.main-div-LHS{
+  position: relative;
+}
+.str12{
+  position:relative;
+}
+.str22{
+  position: relative;
+}
+.str1 {
+  position: absolute;
+  top: 825% !important;
+  right: 43% !important;
+}
+.str2 {
+  position: absolute;
+  top: 970% !important;
+  right: 62%;
+}
+.str{
+    position: absolute;
+    top: 60% !important;
+    right: 53% !important;
+}
 .distance {
   padding: 238.95px 164.7px 261.12px 244.7px !important;
 }
@@ -119,9 +143,10 @@
   text-align: left;
   color: white;
   /* background-color: black; */
-  margin-bottom: 0px !important;
+  margin-bottom: 241.65px !important;
   display: flex;
   justify-content: center;
+
 }
 .bout-text-2 {
   margin-top: 22.9px !important;
@@ -580,6 +605,14 @@
 .roadmap-img {
   padding: 56.7px 0px 79.13px !important;
 }
+@media (max-width:1700px) {
+  .str1{
+    display: none;
+  }
+  .str2{
+    display: none;
+  }
+}
 @media (max-width: 1550px) {
   .distance {
     padding: 238.95px 93.7px 261.12px 99.7px !important;
@@ -613,12 +646,16 @@
   .distance {
     padding: 238.95px 101.7px 261.12px 110.7px !important;
   }
+
 }
 @media (max-width: 1530px) {
   .aboutUs-bg-color {
     background: rgba(218, 143, 77, 0.09);
     background: none;
   }
+  .str{
+    display: none;
+    }
 }
 @media (max-width: 1424px) {
   .maincat {
