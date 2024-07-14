@@ -352,7 +352,7 @@
 .image-card {
   width: 324px !important;
   height: 321.75px !important;
-  padding: 27px !important;
+  padding: 24.3px 27px 27px !important;
   gap: 4.05px !important;
   border-radius: 27px !important;
   background: rgba(230, 220, 186, 0.2) !important;
