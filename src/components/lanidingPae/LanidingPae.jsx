@@ -67,6 +67,7 @@ function LanidingPae() {
   const handleCount = (index) => {
     setCount(index);
   };
+
   const handleClick = (index) => {
     setActiveButton(index);
   };
@@ -75,16 +76,16 @@ function LanidingPae() {
     <div className="main-bg-black-n-white-img">
       <Header />
       {/* maindiv */}
-      <Container fluid className="bg-img-container">
+     <Container fluid className="bg-img-container">
         <Row className="distance">
           <Col>
             {" "}
             <div className="text-font">
-              <h3>
+              <h3 className="mb-0">
                 We Have High
                 <br /> Quality <span> NFT</span> <br /> Collections
               </h3>
-              <p>
+              <p className="mb-0">
                 Lorem ipsum dolor sit amet consectetur. Rhoncus massa
                 suspendisse turpis sed viverra tempus tortor. Habitant accumsan
                 sagittis in facilisi placerat ac. Laoreet scelerisque viverra
@@ -97,13 +98,22 @@ function LanidingPae() {
               <button className="contact-btn"> Contact Us</button>
             </div>
             <div className="card-img-bg">
-                <div className="card-likes-text-stlying"> <h3>240k+</h3> <p>Total Sale</p></div>
-                <div className="card-likes-text-stlying"> <h3>100k+</h3> <p>Auctions</p></div>
-                <div className="card-likes-text-stlying"> <h3>240k+</h3> <p>Artists</p></div>
+              <div className="card-likes-text-stlying">
+                {" "}
+                <h3>240k+</h3> <p>Total Sale</p>
+              </div>
+              <div className="card-likes-text-stlying">
+                {" "}
+                <h3>100k+</h3> <p>Auctions</p>
+              </div>
+              <div className="card-likes-text-stlying">
+                {" "}
+                <h3>240k+</h3> <p>Artists</p>
+              </div>
             </div>
           </Col>
-          <Col>
-            <img src={catimg} />
+          <Col  className="maincat">
+            <img src={catimg}/>
           </Col>
         </Row>
       </Container> 
@@ -112,11 +122,11 @@ function LanidingPae() {
         <h3 className="about-us">About us</h3>
         <div className="aboutUs-bg-color">
           <Row className="abotus-row">
-            <Col>
+            <Col md={12} lg={6}>
               <img src={cats} className="cats-img" />
             </Col>
-            <Col>
-              <p>
+            <Col md={12} lg={6} className="right-col-p">
+              <p className="mb-0">
                 Lorem ipsum dolor sit amet consectetur. Pharetra faucibus donec
                 ultrices eros elit metus morbi aliquam quis. Suspendisse massa
                 ullamcorper tortor morbi nisi leo. Ultrices leo vel tincidunt
@@ -126,7 +136,7 @@ function LanidingPae() {
                 nisi semper adipiscing quam in est. Tempor sed dui nunc diam
                 adipiscing at.
               </p>
-              <p>
+              <p className="bout-text-2 mb-0">
                 Tellus rhoncus metus et eget mattis fringilla nec id. Amet
                 ultrices quam ridiculus tellus. Leo adipiscing tincidunt amet
                 nisi semper adipiscing quam in est. Tempor sed dui nunc diam
@@ -137,10 +147,10 @@ function LanidingPae() {
           </Row>
         </div>
       </Container>
-      {/* top creater */}
-       <div className="checkout2 top-creater">
-        <h3>Top Collections</h3>
-        <p>
+      {/* top collection */}
+      <div className="checkout2 top-creater">
+        <h3 className="mb-0">Top Collections</h3>
+        <p className="mb-0">
           The largest and unique Super rare NFT marketplace <br />
           For crypto-collectibles
         </p>
@@ -149,41 +159,43 @@ function LanidingPae() {
         {" "}
         {Array.from({ length: Math.ceil(catimges.length / 3) }).map(
           (_, rowIndex) => (
-            <Row key={rowIndex} className={`nfts-boxes-divs-stlye1 ${activeButton === 0 ? 'active' : ''}`} onClick={() => handleClick(0)}>
+            <Row key={rowIndex} className="nfts-boxes-divs-stlye1">
               {catimges
                 .slice(rowIndex * 3, rowIndex * 3 + 3)
                 .map((img, colIndex) => (
                   <Col key={colIndex} className="p-0 crd-derction">
-                    <Card className="image-card1">
-                        <Card.Title className="title-name mb-0">
-                          <p>Created by</p>
-                          <h3 className="titlename">
-                            {" "}
-                            <div
-                              className="bg-white rounded-pill"
-                              style={{ width: "27px", height: "27px" }}
-                            >
-                              
-                            </div>{" "}
-                            James Watson
-                          </h3>
-                        </Card.Title>
-                        <div className="card-info-igm">
-                          <Card.Img
-                            variant="top"
-                            src={img.src}
-                            alt={img.name}
-                            className="cats-images"
-                          />
-
-                        </div>
-                        <Card.Text className=" font-stlye-text mb-0">
-                            <h3>Nfts Collections</h3>
-                            <p className="mb-0">
-                            Created by 
-                              <span> James Watson</span>
-                            </p>
-                          </Card.Text>
+                    <Card
+                      className={` image-card1 ${
+                        activeButton === 0 ? "active" : ""
+                      }`}
+                      onClick={() => handleClick(0)}
+                    >
+                      <Card.Title className="title-name mb-0">
+                        <p>Created by</p>
+                        <h3 className="titlename">
+                          {" "}
+                          <div
+                            className="bg-white rounded-pill"
+                            style={{ width: "27px", height: "27px" }}
+                          ></div>{" "}
+                          James Watson
+                        </h3>
+                      </Card.Title>
+                      <div className="card-info-igm">
+                        <Card.Img
+                          variant="top"
+                          src={img.src}
+                          alt={img.name}
+                          className="cats-images"
+                        />
+                      </div>
+                      <Card.Text className=" font-stlye-text mb-0">
+                        <h3>Nfts Collections</h3>
+                        <p className="mb-0">
+                          Created by
+                          <span> James Watson</span>
+                        </p>
+                      </Card.Text>
                     </Card>
                   </Col>
                 ))}
@@ -197,9 +209,8 @@ function LanidingPae() {
           <h3>Top creators</h3>
           <p>Checkout Top Rated Creators on the NFT Marketplace</p>
         </div>
-        <div>
           {" "}
-          {Array.from({ length: Math.ceil(images.length=4) }).map(
+          {Array.from({ length: Math.ceil((images.length = 4)) }).map(
             (_, rowIndex) => (
               <Row key={rowIndex} className="nfts-boxes-divs-stlye">
                 {images
@@ -209,9 +220,7 @@ function LanidingPae() {
                       <Card className="image-card">
                         <div>
                           <Card.Title className="title-names mb-0">
-                            <p>
-1
-                            </p>
+                            <p>{colIndex + 1}</p>{" "}
                           </Card.Title>
                           <div className="d-flex justify-content-center">
                             <Card.Img
@@ -236,13 +245,12 @@ function LanidingPae() {
               </Row>
             )
           )}
-        </div>
       </div>
       {/* roadmap */}
       <div>
         <h3 className="roadmap">Road Map</h3>
-        <div className="d-flex justify-content-center roadmap-img" >
-            <img src={roadmap} width={"80%"} />
+        <div className="d-flex justify-content-center roadmap-img">
+          <img src={roadmap} width={"80%"} />
         </div>
       </div>
       {/* how its work */}
@@ -250,43 +258,43 @@ function LanidingPae() {
         <h3 className="how-it-works">how it works</h3>
         <Row className="d-flex align-items-center justify-content-center">
           <Col lg={6} className="col-RHS">
-            <img src={wallet}    className="imges-nfts"/>
+            <img src={wallet} className="imges-nfts" />
           </Col>
           <Col lg={6} className="col-RHS">
-            <h3>Setup and Connect your Wallet.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque
-              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque 
-              porta elementum. Id mattis neque diam nulla. Amet et a felis
-              pellentesque sed odio.
+            <h3>Setup and Connect <br/> your Wallet.</h3>
+            <p className="mb-0">
+              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque<br/>
+              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque porta<br/>
+              elementum. Id mattis neque diam nulla. Amet et a felis
+              pellentesque <br/>sed odio.
             </p>
           </Col>
         </Row>
         <Row className="">
           <Col lg={6} className="col-RHS">
-            <h3>Setup and Connect your Wallet.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque
-              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque 
-              porta elementum. Id mattis neque diam nulla. Amet et a felis
-              pellentesque sed odio.
+            <h3>Setup and Connect<br/> your Wallet.</h3>
+            <p className="mb-0">
+              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque<br/>
+              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque porta<br/>
+              elementum. Id mattis neque diam nulla. Amet et a felis
+              pellentesque<br/> sed odio.
             </p>
           </Col>
-          <Col lg={6}  className="col-RHS">
-            <img src={monkey}   className="imges-nfts"  />
+          <Col lg={6} className="col-RHS">
+            <img src={monkey} className="imges-nfts" />
           </Col>
         </Row>
         <Row className="">
           <Col lg={6} className="col-RHS">
-            <img src={dollarimg}  className="imges-nfts"/>
-          </Col >
+            <img src={dollarimg} className="imges-nfts" />
+          </Col>
           <Col lg={6} className="col-RHS">
-            <h3>Setup and Connect your Wallet.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque
-              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque 
-              porta elementum. Id mattis neque diam nulla. Amet et a felis
-              pellentesque sed odio.
+            <h3>Setup and Connect <br/>your Wallet.</h3>
+            <p className="mb-0">
+              Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque<br/>
+              nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque porta<br/>
+              elementum. Id mattis neque diam nulla. Amet et a felis
+              pellentesque <br/>sed odio.
             </p>
           </Col>
         </Row>
@@ -294,17 +302,19 @@ function LanidingPae() {
       {/* join now */}
       <div className="bg-footer">
         <h3 className="join-text">Join Our Community</h3>
-        <p>
+        <p className="lorem">
           Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque nunc
-          ut sit a volutpat elementum. Nunc <br/> elit nisi pellentesque porta
+          ut sit a volutpat elementum. Nunc <br /> elit nisi pellentesque porta
           elementum. Id mattis neque diam nulla. Amet et a felis pellentesque
           sed odio.
         </p>
         <div className="input-stlying">
-          <input type="text" className="email-input" placeholder="Your Email"/>
+          <input type="text" className="email-input" placeholder="Your Email" />
           <button className="join-btn">Join Now</button>
         </div>
-        <p className="nft-marketing ">Ⓒ NFT Market. Use this template freely.</p>
+        <p className="nftmarket">
+          Ⓒ NFT Market. Use this template freely.
+        </p>
       </div>
     </div>
   );
