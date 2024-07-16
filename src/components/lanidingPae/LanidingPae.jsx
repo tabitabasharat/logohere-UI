@@ -251,7 +251,7 @@ function LanidingPae() {
       </div>
       {/* roadmap */}
       <div>
-        <h3 className="roadmap">Road Map</h3>
+        <h3 className="roadmap mb-0">Road Map</h3>
         <div className="d-flex justify-content-center roadmap-img">
           <img src={roadmap} width={"80%"} />
         </div>
@@ -323,8 +323,8 @@ function LanidingPae() {
       </Container>
       {/* join now */}
       <div className="bg-footer">
-        <h3 className="join-text">Join Our Community</h3>
-        <p className="lorem">
+        <h3 className="join-text mb-0">Join Our Community</h3>
+        <p className="lorem mb-0">
           Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque nunc
           ut sit a volutpat elementum. Nunc <br /> elit nisi pellentesque porta
           elementum. Id mattis neque diam nulla. Amet et a felis pellentesque
@@ -334,7 +334,7 @@ function LanidingPae() {
           <input type="text" className="email-input" placeholder="Your Email" />
           <button className="join-btn">Join Now</button>
         </div>
-        <p className="nftmarket">Ⓒ NFT Market. Use this template freely.</p>
+        <p className="nftmarket mb-0">Ⓒ NFT Market. Use this template freely.</p>
       </div>
     </div>
   );
