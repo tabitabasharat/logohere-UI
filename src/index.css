@@ -10,6 +10,10 @@
   font-family: "Work Sans";
   src: url('../src/assets/font/WorkSans-VariableFont_wght.ttf');
 }
+@font-face {
+  font-family: "Inter";
+  src: url("../src/assets/font/Inter-VariableFont_slnt\,wght.ttf");
+}
 body {
   margin: 0;
   font-family: "Poppins" !important;

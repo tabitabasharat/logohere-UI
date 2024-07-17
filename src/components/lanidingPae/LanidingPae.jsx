@@ -59,18 +59,6 @@ const shuffleImages = (images) => {
 function LanidingPae() {
   const shuffledImages = shuffleImages(images);
   const [activeButton, setActiveButton] = useState(0);
-  const defaultCount = 1;
-  const [count, setCount] = useState([
-    { num: 1 },
-    { num: 2 },
-    { num: 3 },
-    { num: 4 },
-    { num: 5 },
-  ]);
-  const handleCount = (index) => {
-    setCount(index);
-  };
-
   const handleClick = (index) => {
     setActiveButton(index);
   };
@@ -98,21 +86,21 @@ function LanidingPae() {
               </p>
             </div>
             <div className="butons-stlying">
-              <button className="get-btn"> Get Whitelist</button>
+              <button className="get-btn "> Get Whitelist</button>
               <button className="contact-btn"> Contact Us</button>
             </div>
             <div className="card-img-bg">
               <div className="card-likes-text-stlying">
                 {" "}
-                <h3>240k+</h3> <p>Total Sale</p>
+                <h3 className="mb-0">240k+</h3> <p className="mb-0">Total Sale</p>
               </div>
               <div className="card-likes-text-stlying">
                 {" "}
-                <h3>100k+</h3> <p>Auctions</p>
+                <h3 className="mb-0">100k+</h3> <p className="mb-0">Auctions</p>
               </div>
               <div className="card-likes-text-stlying">
                 {" "}
-                <h3>240k+</h3> <p>Artists</p>
+                <h3 className="mb-0">240k+</h3> <p className="mb-0">Artists</p>
               </div>
             </div>
           </Col>
@@ -152,7 +140,7 @@ function LanidingPae() {
         </div>
       </Container>
       {/* top collection */}
-      <div className="checkout2 top-creater">
+      <div className="checkout2 top-collection">
         <h3 className="mb-0">Top Collections</h3>
         <p className="mb-0">
           The largest and unique Super rare NFT marketplace <br />
@@ -206,6 +194,9 @@ function LanidingPae() {
             </Row>
           )
         )}
+        <button className="expolre-btn">
+          Explore More
+        </button>
       </div>
       {/* topcreater */}
       <div className="top-creater">
@@ -223,7 +214,7 @@ function LanidingPae() {
                     <Card className="image-card">
                       <div>
                         <Card.Title className="title-names mb-0">
-                          <p>{colIndex + 1}</p>{" "}
+                          <p className="mb-0">{colIndex + 1}</p>{" "}
                         </Card.Title>
                         <div className="d-flex justify-content-center">
                           <Card.Img
@@ -262,12 +253,12 @@ function LanidingPae() {
       <Container fluid className="bg-black Row-RHS">
         <h3 className="how-it-works">how it works</h3>
         <Row className="d-flex align-items-center str12 justify-content-center">
-          <Col lg={6} className="col-RHS">
+          <Col lg={6} className="col-RHS1">
             <img src={wallet} className="imges-nfts" />
           </Col>
-          <Col lg={6} className="col-RHS ">
+          <Col lg={6} className="col-RHS1 ">
             <h3>
-              Setup and Connect <br /> your Wallet.
+              Setup and Connec <br /> your Wallet.
             </h3>
             <p className="mb-0">
               Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque
@@ -281,10 +272,9 @@ function LanidingPae() {
           </Col>
         </Row>
         <Row className="">
-          <Col lg={6} className="col-RHS str22">
+          <Col lg={6} className="col-RHS2 str22">
             <h3>
-              Setup and Connect
-              <br /> your Wallet.
+            Create your Own <br /> Digital NFT
             </h3>
             <p className="mb-0">
               Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque
@@ -296,7 +286,7 @@ function LanidingPae() {
               <br /> sed odio.
             </p>
           </Col>
-          <Col lg={6} className="col-RHS">
+          <Col lg={6} className="col-RHS2">
             <img src={monkey} className="imges-nfts" />
           </Col>
         </Row>

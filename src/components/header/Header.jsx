@@ -8,7 +8,7 @@ import logo from '../../assets/LogoHere.png'
 function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-black-div">
-    <Container>
+    <Container className='p-0'>
       <Navbar.Brand href="#home"><img src={logo} /></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

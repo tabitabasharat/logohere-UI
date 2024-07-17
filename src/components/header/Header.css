@@ -35,5 +35,21 @@ gap: 70.35px;
 }
 .bg-black-div{
     background-color: black;
-    padding: 31.05px 164.7px 31.05px 167.4px ;
+    padding: 31.05px 164.7px 31.05px 167.4px !important;
+}
+@media (max-width:1660px) {
+    .bg-black-div {
+        background-color: black;
+            padding: 31.05px 100.7px 31.05px 100.4px !important;
+    }
+}
+@media (max-width:525px) {
+    .bg-black-div {
+            padding: 31.05px 50.7px 31.05px 50.4px !important;
+    }
+}
+@media (max-width:425px) {
+    .bg-black-div {
+            padding: 31.05px 30.7px 31.05px 30.4px !important;
+    }
 }
