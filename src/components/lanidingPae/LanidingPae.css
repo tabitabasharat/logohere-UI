@@ -839,6 +839,11 @@
     right: -104px !important;
     height: 85% !important;
 }
+.elips2 {
+  bottom: -27%;
+  right: 312px !important;
+  z-index: 1;
+}
 }
 @media (max-width: 1728px) {
   .ether-img p {
