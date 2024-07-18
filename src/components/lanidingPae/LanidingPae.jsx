@@ -174,7 +174,7 @@ function LanidingPae() {
                         </h3>
                       </Card.Title>
                       <div className="card-info-igm">
-                        <Card.Img
+                       <Card.Img
                           variant="top"
                           src={img.src}
                           alt={img.name}
