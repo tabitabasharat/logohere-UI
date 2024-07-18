@@ -14,6 +14,7 @@ import skull from "../../assets/Ellipse 135.png";
 import skull1 from "../../assets/Ellipse 133.png";
 import skull2 from "../../assets/Ellipse 130.png";
 import skull3 from "../../assets/Ellipse 134.png";
+import skull4 from "../../assets/Ellipse 134.png";
 import roadmap from "../../assets/roadmap.svg";
 import cat1 from "../../assets/Ellipse 129.png";
 import cat2 from "../../assets/Ellipse 130.png";
@@ -24,6 +25,10 @@ import cat6 from "../../assets/Frame 1261152802 (1).png";
 import str from "../../assets/wide.png";
 import str1 from "../../assets/wide.png";
 import str2 from "../../assets/wide.png";
+import elips1 from "../../assets/Ellipse 143.png";
+import elips2 from "../../assets/Ellipse 144.png";
+import elips4 from "../../assets/Ellipse 143.png";
+import elips3 from "../../assets/Ellipse 144.png";
 
 const catimges = [
   { src: cat1 },
@@ -42,6 +47,7 @@ const images = [
   { src: skull1 },
   { src: skull2 },
   { src: skull3 },
+  { src: skull4 },
 ];
 //  const countnum =[1];
 const shuffleImages = (images) => {
@@ -92,7 +98,8 @@ function LanidingPae() {
             <div className="card-img-bg">
               <div className="card-likes-text-stlying">
                 {" "}
-                <h3 className="mb-0">240k+</h3> <p className="mb-0">Total Sale</p>
+                <h3 className="mb-0">240k+</h3>{" "}
+                <p className="mb-0">Total Sale</p>
               </div>
               <div className="card-likes-text-stlying">
                 {" "}
@@ -174,7 +181,7 @@ function LanidingPae() {
                         </h3>
                       </Card.Title>
                       <div className="card-info-igm">
-                       <Card.Img
+                        <Card.Img
                           variant="top"
                           src={img.src}
                           alt={img.name}
@@ -194,9 +201,7 @@ function LanidingPae() {
             </Row>
           )
         )}
-        <button className="expolre-btn">
-          Explore More
-        </button>
+        <button className="expolre-btn">Explore More</button>
       </div>
       {/* topcreater */}
       <div className="top-creater">
@@ -204,11 +209,11 @@ function LanidingPae() {
           <h3>Top creators</h3>
           <p>Checkout Top Rated Creators on the NFT Marketplace</p>
         </div>{" "}
-        {Array.from({ length: Math.ceil((images.length = 4)) }).map(
+        {Array.from({ length: Math.ceil(images.length / 8) }).map(
           (_, rowIndex) => (
             <Row key={rowIndex} className="nfts-boxes-divs-stlye">
               {images
-                .slice(rowIndex * 4, rowIndex * 4 + 4)
+                .slice(rowIndex * 8, rowIndex * 8 + 8)
                 .map((img, colIndex) => (
                   <Col key={colIndex} className="p-0 crd-derction">
                     <Card className="image-card">
@@ -248,15 +253,17 @@ function LanidingPae() {
         </div>
       </div>
       {/* how its work */}
-      <img src={str1} className="str1" />
-      <img src={str2} className="str2" />
       <Container fluid className="bg-black Row-RHS">
-        <h3 className="how-it-works">how it works</h3>
+        <img src={elips1} className="elips1" />
+        <h3 className="how-it-works">How it works</h3>
         <Row className="d-flex align-items-center str12 justify-content-center">
           <Col lg={6} className="col-RHS1">
             <img src={wallet} className="imges-nfts" />
+            <img src={elips3} className="elips3" />
           </Col>
           <Col lg={6} className="col-RHS1 ">
+            <img src={str1} className="str1" />
+
             <h3>
               Setup and Connec <br /> your Wallet.
             </h3>
@@ -274,7 +281,7 @@ function LanidingPae() {
         <Row className="">
           <Col lg={6} className="col-RHS2 str22">
             <h3>
-            Create your Own <br /> Digital NFT
+              Create your Own <br /> Digital NFT
             </h3>
             <p className="mb-0">
               Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque
@@ -285,13 +292,16 @@ function LanidingPae() {
               pellentesque
               <br /> sed odio.
             </p>
+            <img src={str2} className="str2" />
           </Col>
           <Col lg={6} className="col-RHS2">
             <img src={monkey} className="imges-nfts" />
+            <img src={elips4} className="elips4" />
           </Col>
         </Row>
         <Row className="">
           <Col lg={6} className="col-RHS">
+            <img src={elips2} className="elips2" />
             <img src={dollarimg} className="imges-nfts" />
           </Col>
           <Col lg={6} className="col-RHS">
@@ -324,7 +334,9 @@ function LanidingPae() {
           <input type="text" className="email-input" placeholder="Your Email" />
           <button className="join-btn">Join Now</button>
         </div>
-        <p className="nftmarket mb-0">Ⓒ NFT Market. Use this template freely.</p>
+        <p className="nftmarket mb-0">
+          Ⓒ NFT Market. Use this template freely.
+        </p>
       </div>
     </div>
   );

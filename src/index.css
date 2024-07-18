@@ -14,6 +14,10 @@
   font-family: "Inter";
   src: url("../src/assets/font/Inter-VariableFont_slnt\,wght.ttf");
 }
+@font-face {
+  font-family: "Clash Display";
+  src: url("../src/assets/font/ClashDisplay-Regular.ttf");
+}
 body {
   margin: 0;
   font-family: "Poppins" !important;

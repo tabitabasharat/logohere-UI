@@ -3,8 +3,33 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main-div-LHS {
+/* .main-div-LHS {
   position: relative;
+} */
+.elips1 {
+  position: absolute;
+  right: 0px !important;
+  bottom: 80% !important;
+  z-index: 1 !important;
+  height: 25%;
+}
+.elips2 {
+  position: absolute;
+  bottom: -27%;
+  right: 279px !important;
+  z-index: 1;
+}
+.elips3 {
+  position: absolute;
+  top: 7%;
+  right: 489px;
+  height: 100% !important;
+}
+.elips4 {
+  position: absolute;
+  top: 20% !important;
+  left: 387px !important;
+  height: 104% !important;
 }
 .str12 {
   position: relative;
@@ -14,18 +39,18 @@
 }
 .str1 {
   position: absolute;
-  top: 790% !important;
-  right: 43% !important;
+  bottom: 105% !important;
+  right: 88% !important;
 }
 .str2 {
-  position: absolute;
-  top: 940% !important;
-  right: 62%;
+    position: absolute;
+    bottom: 26% !important;
+    right: 30%;
 }
 .str {
   position: absolute;
-  top: 60% !important;
-  right: 53% !important;
+  top: 65% !important;
+  right: 52% !important;
 }
 .distance {
   padding: 245.63px 201.15px 262.12px 236.1px !important;
@@ -45,10 +70,13 @@
   width: 100%;
   height: 162.16px;
 }
+.text-font{
+  position: relative;
+}
 .text-font h3 {
   font-family: Poppins;
   font-size: 86.4px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 129.6px;
   text-align: left;
   color: white !important;
@@ -59,10 +87,10 @@
 .text-font p {
   font-family: Poppins;
   font-size: 13.2px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 19.8px;
   text-align: left;
-  color: white;
+  color: #B3B3B3;
 }
 .butons-stlying {
   display: flex;
@@ -80,7 +108,7 @@
   color: white;
   font-family: Poppins;
   font-size: 17.2px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 25.8px;
   text-align: left;
   display: flex;
@@ -98,7 +126,7 @@
   color: white;
   font-family: Poppins;
   font-size: 17.2px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 25.8px;
   text-align: left;
   display: flex;
@@ -113,7 +141,7 @@
 .card-likes-text-stlying h3 {
   font-family: Space Mono !important;
   font-size: 34.4px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 48.16px;
   text-align: left;
   color: white;
@@ -129,7 +157,7 @@
 .about-us {
   font-family: Poppins;
   font-size: 54px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 81px;
   text-align: left;
   color: white;
@@ -140,9 +168,10 @@
   padding: 20.32px 0px 131.23px !important;
 }
 .how-it-works {
+  position: relative;
   font-family: Poppins;
   font-size: 50.79px !important;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 81px;
   text-align: left;
   color: white;
@@ -167,7 +196,7 @@
 .Connect-Wallet-btn {
   font-family: Poppins;
   font-size: 17.55px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 35.24px;
   text-align: left;
   color: white;
@@ -186,6 +215,7 @@
 
 .Row-RHS {
   padding: 156.6px 115.56px 116.1px 186.06px !important;
+  position: relative;
 }
 .roadmap-img {
   background-image: url("../../assets/image\ 108.png");
@@ -198,12 +228,12 @@
   text-align: center;
   color: white;
   padding-bottom: 122.6px;
-  padding-top: 179.1px;
+  padding-top: 143.1px;
 }
 .col-RHS h3 {
   font-family: Poppins;
   font-size: 59.76px !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   line-height: 71.71px !important;
   text-align: left;
   color: white;
@@ -213,7 +243,7 @@
 .col-RHS p {
   font-family: Poppins;
   font-size: 14.94px !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   line-height: 17.93px !important;
   color: white;
 }
@@ -221,11 +251,12 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  position: relative;
 }
 .col-RHS1 h3 {
   font-family: Poppins;
   font-size: 59.76px !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   line-height: 71.71px !important;
   text-align: left;
   color: white;
@@ -234,7 +265,7 @@
 .col-RHS1 p {
   font-family: Poppins;
   font-size: 14.94px !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   line-height: 17.93px !important;
   color: white;
 }
@@ -243,11 +274,12 @@
   align-items: flex-start;
   flex-direction: column;
   padding: 0px 0px 234.9px !important;
+  position: relative;
 }
 .col-RHS2 h3 {
   font-family: Poppins;
   font-size: 59.76px !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   line-height: 71.71px !important;
   text-align: left;
   color: white;
@@ -257,7 +289,7 @@
 .col-RHS2 p {
   font-family: Poppins;
   font-size: 14.94px !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   line-height: 17.93px !important;
   color: white;
 }
@@ -266,10 +298,12 @@
   align-items: flex-start;
   flex-direction: column;
   padding: 0px 0px 238.95px !important;
+  position: relative;
 }
 .imges-nfts {
   width: 531.9px !important;
   height: 457.65px !important;
+  position: relative;
 }
 .bg-footer {
   background-image: url("../../assets/image\ 108.png");
@@ -280,11 +314,12 @@
   align-items: center;
   flex-direction: column;
   padding-top: 110.7px;
+  height: 100vh;
 }
 .join-text {
   font-family: Poppins;
   font-size: 59.76px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 71.71px;
   text-align: left;
   color: white;
@@ -346,7 +381,7 @@
 .top-collection h3 {
   font-family: Poppins;
   font-size: 54px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 81px;
   text-align: left;
   color: white;
@@ -531,6 +566,7 @@
   gap: 9px;
   align-items: center;
   justify-content: flex-start;
+  font-family: Clash Display;
   font-size: 18.53px !important;
   font-weight: 600 !important;
   line-height: 27.8px;
@@ -538,10 +574,20 @@
   color: rgba(234, 145, 18, 1);
   margin-bottom: 0px !important;
 }
+.title-name p {
+  font-size: 18.53px;
+  font-family: Clash Display;
+  font-weight: 400;
+  line-height: 27.8px;
+  text-align: left;
+  color: rgba(180, 199, 206, 1);
+  padding-bottom: 4px !important;
+  margin-bottom: 0px !important;
+}
 .font-stlye-text h3 {
   font-family: Poppins;
   font-size: 27px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 27.8px;
   text-align: left;
   color: white;
@@ -551,11 +597,13 @@
   font-size: 18.53px;
   font-weight: 400;
   line-height: 27.8px;
+  font-family: Clash Display;
   text-align: left;
   color: rgba(172, 172, 172, 1);
 }
 .font-stlye-text p span {
   font-size: 18.53px;
+  font-family: Clash Display;
   font-weight: 400;
   line-height: 27.8px;
   text-align: left;
@@ -644,7 +692,7 @@
 .right-col-p p {
   font-family: Poppins;
   font-size: 16.2px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 35.24px;
   text-align: left;
   color: white !important;
@@ -785,6 +833,12 @@
     width: 100% !important;
     height: 100% !important;
   }
+  .elips4 {
+    position: absolute;
+    top: 40% !important;
+    right: -104px !important;
+    height: 85% !important;
+}
 }
 @media (max-width: 1728px) {
   .ether-img p {
@@ -799,6 +853,18 @@
   .imges-nfts {
     width: 100% !important;
     height: 100% !important;
+  }
+  .elips1{
+    display: none;
+  }
+  .elips2{
+    display: none;
+  }
+  .elips3{
+    display: none;
+  }
+  .elips4{
+    display: none;
   }
 }
 @media (max-width: 1424px) {
@@ -822,6 +888,7 @@
 @media (min-width: 1400px) {
   .nfts-boxes-divs-stlye {
     padding: 0px 100px !important;
+    margin-bottom: 36px !important;
   }
   .cats-img {
     height: 571.1px;
@@ -842,7 +909,7 @@
   .text-font h3 {
     font-family: Poppins;
     font-size: 72.4px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 100.6px;
     text-align: left;
     color: white !important;
@@ -859,7 +926,7 @@
   .card-likes-text-stlying h3 {
     font-family: Space Mono !important;
     font-size: 26.4px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 21.16px;
     text-align: left;
     color: white;
@@ -894,13 +961,13 @@
   .how-it-works {
     font-family: Poppins;
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 0px;
   }
   .col-RHS h3 {
     font-family: Poppins;
     font-size: 39.76px !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     line-height: 55.71px !important;
     text-align: left;
     color: white;
@@ -909,7 +976,7 @@
   .col-RHS p {
     font-family: Poppins;
     font-size: 12.94px !important;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     line-height: 16.93px !important;
     color: white;
   }
@@ -922,7 +989,7 @@
   .col-RHS1 h3 {
     font-family: Poppins;
     font-size: 39.76px !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     line-height: 55.71px !important;
     text-align: left;
     color: white;
@@ -944,7 +1011,7 @@
   .col-RHS2 h3 {
     font-family: Poppins;
     font-size: 39.76px !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     line-height: 55.71px !important;
     text-align: left;
     color: white;
@@ -953,7 +1020,7 @@
   .col-RHS2 p {
     font-family: Poppins;
     font-size: 12.94px !important;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     line-height: 16.93px !important;
     color: white;
   }
@@ -1064,7 +1131,7 @@
   .text-font h3 {
     font-family: Poppins;
     font-size: 61.4px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 87.6px;
     text-align: left;
     color: white !important;
@@ -1102,7 +1169,7 @@
   .right-col-p p {
     font-family: Poppins;
     font-size: 16.2px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 22.24px !important;
     color: white !important;
   }
@@ -1129,7 +1196,7 @@
   .join-text {
     font-family: Poppins;
     font-size: 43.76px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 55.71px;
     text-align: left;
     color: white;
@@ -1165,7 +1232,7 @@
   .text-font h3 {
     font-family: Poppins;
     font-size: 35.4px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 45.6px;
     text-align: left;
     color: white !important;
@@ -1184,7 +1251,7 @@
   .text-font p {
     font-family: Poppins;
     font-size: 10.2px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 14.8px;
     text-align: left;
     color: white;
@@ -1197,7 +1264,7 @@
   .col-RHS h3 {
     font-family: Poppins;
     font-size: 39.76px !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     line-height: 46.71px !important;
     text-align: left;
     color: white;
