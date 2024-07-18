@@ -14,12 +14,12 @@
 }
 .str1 {
   position: absolute;
-  top: 760% !important;
+  top: 790% !important;
   right: 43% !important;
 }
 .str2 {
   position: absolute;
-  top: 895% !important;
+  top: 940% !important;
   right: 62%;
 }
 .str {
@@ -757,7 +757,7 @@
     display: none;
   }
 }
-@media (min-width: 1728px) {
+@media (min-width: 1729px) {
   .imges-nfts {
     width: 100% !important;
     height: 100% !important;
@@ -766,6 +766,10 @@
 @media (max-width: 1728px) {
   .ether-img p {
     text-align: left !important;
+  }
+  .imges-nfts {
+    width: 439.45px !important;
+    height: 439.45px !important;
   }
 }
 @media (max-width: 1727px) {
